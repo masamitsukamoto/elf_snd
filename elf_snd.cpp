@@ -546,7 +546,7 @@ L000306:
 	rts
 */
 	//a2 = L000a60;
-    for (i=0;i<9;i++) {
+    for (int i=0;i<9;i++) {
 	work_trk[i].I05 = 0x01;
     }
 }
@@ -1435,7 +1435,7 @@ L00067a:
 	dbra.w	d3,L000666
 */
 
-	for (i=0;i<4;i++) {
+	for (int i=0;i<4;i++) {
 		if ((d4.w & 0x01) == 0x01) {
 			d4.w >>= 1;
 			d2.l = 0x7f;
@@ -1461,7 +1461,7 @@ L000688:
 	addq.b	#8,d1
 	dbra.w	d3,L000688
 */
-	for (i=0;i<0x10;i++) {
+	for (int i=0;i<0x10;i++) {
 		d2.b = *a1++;
 		//L0003dc();
 		OPM_Write(d1.b,d2.b);
@@ -2448,8 +2448,9 @@ int WINAPI WinMain(HINSTANCE hCurInst, HINSTANCE hPrevInst,
     }
 
 #ifndef	ELFSND_WAVE_WRITE
-    ret=X68Sound_Start( SampleRate[sample_rate] );
-    if (ret != 0) {										// 戻り値が0以外は失敗
+    ret=X68Sound_Start( SampleRate[sample_rate], 1, 1, 5, 5, 200, 1.0);
+	
+	if (ret != 0) {										// 戻り値が0以外は失敗
 	if (ret == X68SNDERR_PCMOUT) {
 //	    printf("X68Sound : PCMサウンドを出力できません。\n");
 	} else if (ret == X68SNDERR_TIMER) {
