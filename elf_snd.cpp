@@ -2612,8 +2612,8 @@ BOOL InitInstance(HINSTANCE hInst, LPCSTR szClassName, int nCmdShow)
 	    WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX,
             CW_USEDEFAULT,    //Ｘ座標
             CW_USEDEFAULT,    //Ｙ座標
-            440,//CW_USEDEFAULT,    //幅
-            60,//CW_USEDEFAULT,    //高さ
+            440 +10,//CW_USEDEFAULT,    //幅
+            60+ 16,//CW_USEDEFAULT,    //高さ
             NULL,    //親ウィンドウのハンドル、親を作るときはNULL
             NULL,    //メニューハンドル、クラスメニューを使うときはNULL
             hInst,    //インスタンスハンドル
