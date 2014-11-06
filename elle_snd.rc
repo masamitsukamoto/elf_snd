@@ -1,0 +1,136 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MYPOPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "表示されません"
+    BEGIN
+        MENUITEM "終了\tESC",                   IDM_END
+        POPUP "ゲームタイトル"
+        BEGIN
+            MENUITEM "ELLE",                        IDM_ELLE
+            MENUITEM "SHANGRLA",                    IDM_SHAN
+            MENUITEM "天神乱魔",                    IDM_TNSN
+            MENUITEM "DragonKnight3",               IDM_DGK3
+            MENUITEM SEPARATOR
+            MENUITEM "次のゲームタイトル\tn",       IDM_GAME_NEXT
+            MENUITEM "前のゲームタイトル\tN",       IDM_GAME_PREV
+        END
+        POPUP "曲"
+        BEGIN
+            MENUITEM "再生\tENTER",                 IDM_PLAY
+            MENUITEM "停止\ts",                     IDM_STOP
+            MENUITEM "PAUSE\tp",                    IDM_PAUSE
+            MENUITEM "フェードアウト\t^",           IDM_FADEOUT
+            MENUITEM SEPARATOR
+            MENUITEM "次曲再生\tSPC",               IDM_PLAY_NEXT
+            MENUITEM "前曲再生\tBS",                IDM_PLAY_PREV
+            MENUITEM "次曲選択\tf",                 IDM_NEXT
+            MENUITEM "前曲選択\tb",                 IDM_PREV
+            MENUITEM SEPARATOR
+            MENUITEM "スロー再生\tS",               IDM_PLAY_SLOW
+            MENUITEM "早送り再生\tT",               IDM_PLAY_FAST
+            MENUITEM "標準テンポ\tt",               IDM_NORM_TEMPO
+        END
+        POPUP "その他"
+        BEGIN
+            MENUITEM "サンプリング周波数\tr",       IDM_SMPL_RATE
+            MENUITEM "RESET X68Sound.DLL\tR",       IDM_RESET
+            MENUITEM SEPARATOR
+            MENUITEM "マスク表示／非表示\tm",       IDM_DISP_M
+            MENUITEM "全マスク\t-",                 IDM_MASK_ALL
+            MENUITEM "全マスク解除\t0",             IDM_UNMASK_ALL
+            POPUP "マスク"
+            BEGIN
+                MENUITEM "FM1\t1",                      IDM_MASK_FM1
+                MENUITEM "FM2\t2",                      IDM_MASK_FM2
+                MENUITEM "FM3\t3",                      IDM_MASK_FM3
+                MENUITEM "FM4\t4",                      IDM_MASK_FM4
+                MENUITEM "FM5\t5",                      IDM_MASK_FM5
+                MENUITEM "FM6\t6",                      IDM_MASK_FM6
+                MENUITEM "FM7\t7",                      IDM_MASK_FM7
+                MENUITEM "FM8\t8",                      IDM_MASK_FM8
+                MENUITEM "ADPCM\t9",                    IDM_MASK_ADPCM
+            END
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+MYACCEL ACCELERATORS DISCARDABLE 
+BEGIN
+    VK_ESCAPE,      IDM_END,                VIRTKEY, NOINVERT
+    VK_RETURN,      IDM_PLAY,               VIRTKEY, NOINVERT
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
